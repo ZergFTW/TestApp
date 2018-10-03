@@ -144,7 +144,7 @@ bool Parser::isOutputThreadFinished() {
     if (mOutputThreadResult.valid()) {
         try {
             mOutputThreadResult.get();
-            TSCout << "Done!"; // Everything dumped to output file, Done!
+            TSCout << "Done!" << endl; // Everything dumped to output file, Done!
             return true;
         }
         // whoops, something goes wrong
